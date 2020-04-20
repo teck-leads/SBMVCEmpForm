@@ -1,0 +1,5 @@
+package com.sb.emp.app;
+
+public interface DBQueries {
+	String SELECT_QRY = "SELECT EMPNO, ENAME, JOB, MGR, DEPTNO FROM EMP WHERE (EMPNO IS NOT NULL AND EMPNO = ?) OR (ENAME IS NOT NULL AND ENAME LIKE '#1%') OR (JOB IS NOT NULL AND JOB LIKE '#2%')  OR (SAL IS NOT NULL AND SAL >= ?)";
+}
